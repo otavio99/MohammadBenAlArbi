@@ -1,0 +1,277 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+<!-- Hero Section -->
+<section class="hero is-medium">
+  <div class="hero-body">
+    <div class="">
+      <div class="columns is-vcentered">
+        <!-- Texto Principal -->
+        <div class="column is-7">
+          <h2 class="title is-2 is-family-serif">
+            Escrita Criativa para Criação de Conteúdo
+          </h2>
+          <h4 class="subtitle is-4">
+            Publique diariamente sem estresse e com qualidade
+          </h4>
+          <div class="buttons">
+            <a class="button is-warning is-rounded" href="{{ url_for('landing', lang=lang) }}#about">
+              Saiba Mais
+            </a>
+            <a class="button is-warning is-light is-rounded" href="{{ url_for('landing', lang=lang) }}#contact">
+              Entre em Contato
+            </a>
+          </div>
+        </div>
+        <!-- Imagem -->
+        <div class="column is-5 has-text-centered">
+          <figure class="image is-4by3">
+            <img src="/static/negocios.svg" alt="Imagem de Negócios">
+          </figure>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- About Section -->
+<section id="about" class="section">
+  <div class="container">
+    <div class="content" style="max-width: 800px; margin: auto; text-align: justify;">
+      <p>
+        Você sente que tem <code>dificuldade</code> para postar com regularidade?
+      </p>
+
+      <p>Sente que vai dar um trabalho enorme, e, no fim das contas, <code>pode nem trazer retorno</code>?</p>
+
+      <blockquote>
+        <strong>Esse sentimento é comum</strong> <br><br>
+        É fácil se perder nesse processo e acabar se esgotando, se frustrando ou até mesmo sem motivação.
+        <br><br> 
+        Porém, sem uma presença digital ativa, muitos profissionais perdem oportunidades todos os dias.
+      </blockquote>
+      <p>
+        Em vez de depender da inspiração ou da pressão de postar algo a qualquer custo, você poderia estabelecer um
+        <code> fluxo que se encaixe na sua rotina diária</code>, permitindo que seu conteúdo surja de forma natural e espontânea.
+      </p>
+      <p>
+        Saiba que, com o apoio da <code>Escrita Criativa</code> e da <code>Inteligência Artificial</code>, ter uma rotina produtiva de postagens é possível!
+      </p>
+      <p>
+        A Escrita Criativa transforma seus interesses em conteúdos autênticos e reaproveitáveis, construindo confiança e gerando novas oportunidades.
+      </p>
+      <p>
+        A Inteligência Artificial, por sua vez, garante qualidade e valor em cada postagem, sem exigir esforço excessivo.
+      </p>
+      <p>
+        Com uma rotina consistente, você poderá construir uma comunidade engajada, criando uma fonte orgânica de novos clientes.
+      </p>
+      
+      <h3 class="title is-3">Como Funciona?</h3>
+      <p>São três etapas:</p>
+      <p>
+        <code><strong>1. Descoberta</strong></code><br>
+        Analisamos sua experiência e interesses para definir os pilares do seu conteúdo.
+      </p>
+      <p>
+        <code><strong>2. Escrita Criativa</strong></code><br>
+        Desenvolvemos um conteúdo piloto com base nesses pilares, aplicando técnicas que tornam a escrita fluida e sustentável – sempre com o suporte da Inteligência Artificial.
+      </p>
+      <p>
+        <code><strong>3. Revisão & Rotina</strong></code><br>
+        Revisamos todo o processo e estruturamos uma rotina prática de criação e postagem, também explorando estratégias para reaproveitar seu conteúdo de forma inteligente.
+      </p>
+      <p>
+        <code><strong>Resultado</strong></code><br>
+        Ao final do treinamento, você terá uma rotina de criação de conteúdo alinhada à sua visão, interesses e experiência. E o melhor: de forma autônoma, mas com meu suporte para ajustes ou para celebrar suas evoluções.
+      </p>
+      <p>
+        <code><strong>Caso de Sucesso</strong></code><br>
+        Em janeiro de 2025, colaborei com Aline, psicóloga clínica e perinatal, focando em seu programa "Gestando uma Mãe" no Instagram. Após uma conversa inicial para entender os desafios e as ansiedades das futuras mães, definimos um formato de posts personalizado. Em menos de três semanas, implementamos uma rotina produtiva que aumentou significativamente a frequência das publicações de Aline.
+        [Saiba mais em → <a class="link" href="{{ url_for('post', path='pre-natal-psicologico-aline.md', lang=lang) }}">Caso de Sucesso: Aline</a>]
+      </p>
+      
+      <h3 class="title is-3">Para Quem?</h3>
+      <p>
+        Se você deseja publicar com consistência nas redes sociais e fortalecer sua presença digital, esse treinamento é para você que atua como:
+      </p>
+      <p>
+        ✅ Psicólogo ou terapeuta<br>
+        ✅ Coach ou mentor<br>
+        ✅ Professor<br>
+        ✅ Startup ou pequena empresa
+      </p>
+      
+      <h3 class="title is-3">Ofertas</h3>
+      <ul>
+        <li>
+          <code>Primeira Chamada Gratuita (30 minutos)</code> – Uma introdução ao processo com dicas iniciais que você pode aplicar de imediato.
+        </li>
+        <li>
+          <code>Período Promocional (R$10 por atividade)</code> – Se ainda estiver em dúvida, podemos realizar alguns testes cobrando apenas um valor simbólico.
+        </li>
+        <li>
+          <code>Ghostwriting (R$50)</code> – Para quem deseja que eu elabore os posts: crio o conteúdo para você, e você fica com todos os direitos.
+        </li>
+        <li>
+          <code>Pacote Básico (R$497,00)</code> – 2 sessões + plano de ação para estabelecer uma rotina produtiva.
+        </li>
+        <li>
+          <code>Pacote Completo (R$997,00)</code> – 4 sessões + plano de ação + acompanhamento por 1 mês.
+        </li>
+      </ul>
+      <p>
+        Cada caso é único. Se você tiver dúvidas ou precisar de algo personalizado, é só entrar em contato!
+      </p>
+      
+      <div class="has-text-centered" style="margin: 2rem 0;">
+        <a class="button is-success is-rounded" href="{{ url_for('landing', lang=lang) }}#contact">Entre em Contato</a>
+      </div>
+      
+      <h3 class="title is-3">Um Pouco Sobre Mim...</h3>
+      <p>
+        Oi, prazer! Meu nome é Otávio Nathanael e atualmente moro em Corumbá, Mato Grosso do Sul.
+      </p>
+      <p>
+        Desde os 14 anos, sempre sonhei em ter meu próprio negócio. Isso me motivou a aprender inglês por conta própria e a mergulhar na escrita criativa – na época, eu era <code>viciado</code> em livros de fantasia (haha).
+      </p>
+      <p>
+        Em 2018, aos 17, iniciei o curso de <code>Tecnólogo em Análise e Desenvolvimento de Sistemas</code> no IFMS, campus Corumbá.
+      </p>
+      <p>
+        Foram três anos intensos. Muito estudo, algumas tentativas no mundo freelance... e várias frustrações no caminho.
+      </p>
+      
+      <p>
+        No último ano da faculdade, em 2019, eu já estava acelerado, quebrando a cabeça sobre como conseguir um emprego. 
+      </p>
+      <p>
+        As oportunidades eram escassas e, para piorar, minhas bolsas iam até dezembro – depois disso, zerado. Sem renda, sem plano B.
+      </p>
+      
+      <p>
+        Janeiro de 2020 chegou e a realidade bateu forte: minhas chances eram mínimas. A pandemia ainda parecia um problema distante, mas já dava para sentir que algo grande estava vindo. 
+      </p>
+      <p>
+        Sem saída, comecei a atirar para todos os lados, até que uma ideia surgiu: e se eu tentasse trabalho remoto?
+      </p>
+      
+      <blockquote>
+        "Se eu não conseguir trabalho na minha cidade, talvez eu consiga fora..."
+      </blockquote>
+      
+      <p>
+        Após mandar currículo para vários lugares na minha cidade sem muito sucesso (interior é complicado – nem para serviços gerais me chamaram, haha), consegui meus primeiros freelas na plataforma <code>Upwork</code>. 
+      </p>
+
+      <p>
+        E foi aí que tudo começou a mudar.
+      </p>
+            
+      <p>
+        Meu primeiro contrato foi com uma startup de <code>Nova York</code>.
+      </p>
+      <p>
+        Comecei como <code>tutor de Python</code> e, com o tempo, passei a coordenar e desenvolver novos produtos para eles.
+      </p>
+      <p>
+        Ainda na época, eu sabia que <code>não podia me acomodar</code>, mesmo com uma oportunidade incrível como aquela. Eu precisava continuar mandando propostas e aplicando para outras vagas por fora da plataforma.
+      </p>
+      <p>
+        Dois meses depois, consegui minha primeira posição de tempo integral como Desenvolvedor Júnior PHP em uma empresa de <code>Londres</code>, focada em incorporar novas empresas e fornecer serviços essenciais às mesmas.
+      </p>
+      <p>
+        Conciliei essa nova posição com algumas horas diárias de prestação de serviço na <code>startup</code>. Porém, depois de um ano, percebi que não fazia mais sentido e decidi focar apenas na posição fixa.
+      </p>
+      <p>
+        Logo em seguida, migrei para outra empresa, onde tive a oportunidade de experimentar diferentes papéis (Arquiteto de Solução, Analista de Dados, Gerente de time, Marketing & Vendas) e colaborar em projetos nacionais e internacionais.
+      </p>
+      <p>
+        Desde então, participei de diversos projetos e desafios, acumulando experiência ao longo do caminho.
+      </p>
+      <blockquote>
+        <code>Mas algo ainda parecia faltar.</code>
+      </blockquote>
+
+      <p>
+        Em 2024, passei quase o ano inteiro em <code>psicoterapia</code>, refletindo sobre minha trajetória, meus desafios pessoais e o que realmente desejava para o futuro.
+      </p>
+      
+      <p>
+        O trabalho com minha psicóloga me proporcionou um momento necessário para olhar para mim mesmo naquele momento e entender melhor como lidar com a <code>avalanche de problemas</code> na minha vida.
+      </p>
+      
+      <p>
+        Também comecei a olhar para o meu passado e percebi que, lá atrás, aspirava ser um <code>escritor de ficção</code>. A escrita sempre foi uma paixão, mas precisei deixá-la de lado para focar em um caminho mais viável para o meu futuro.
+      </p>
+      
+      <p>
+        Hoje, encontro-me conciliando os sonhos do passado com minha realidade atual, e descobri na escrita um <code>meio-termo</code> que pode me servir tanto profissionalmente quanto pessoalmente.
+      </p>      
+    </div>
+    <div class="content" style="max-width: 800px; margin: auto;">
+      <hr id="contact">
+      <!-- Contato -->
+      <h3 class="title is-3 mt-1">Entre em Contato</h3>
+      <div class="content">
+        <p>
+          <i class="fab fa-whatsapp"></i> <code>Whatsapp:</code> (67) 9 9823-6387<br>
+          <i class="fas fa-envelope"></i> <code>Email:</code> otavio.nathanael@gmail.com<br>
+          <i class="fab fa-linkedin"></i> <code>LinkedIn:</code>
+          <a href="https://www.linkedin.com/in/otavio-nathanael/" target="_blank">linkedin.com/in/otavio-nathanael</a>
+        </p>
+      </div>
+      <hr>
+    </div>
+  </div>
+</section>
+
+<!-- Seção de Reviews (Opcional) -->
+<section id="reviews" class="section" style="display: none;">
+  <div class="container">
+    <div class="card">
+      <header class="card-header">
+        <p class="card-header-title has-text-centered">Depoimentos</p>
+      </header>
+      <div class="card-content">
+        <div class="columns">
+          <div class="column is-6 has-text-centered">
+            <figure class="image is-128x128 is-inline-block">
+              <img class="is-rounded" src="/static/ashjan.jpeg" alt="Depoimento">
+            </figure>
+            <h4 class="title is-4">Dra. Ashjan Sadique Adi</h4>
+            <p class="content is-medium">
+              <i>"Embora o desenvolvimento de negócios digitais seja aplicável a qualquer segmento, meu principal foco é ajudar profissionais da psicologia a desenvolver uma presença online, sempre respeitando as diretrizes éticas e regulamentações do Conselho Federal de Psicologia (CFP)."</i>
+              <br><a href="#">Google Review</a>
+            </p>
+            <a class="button is-success is-rounded" href="{{ url_for('landing', lang=lang) }}">Ver Trabalho Realizado</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Seção de Últimas Postagens (Opcional) -->
+<section class="section" style="display: none;">
+  <div class="container">
+    <h1 class="title is-1">Últimas Postagens</h1>
+    {% for post in metainfos %}
+      <div class="card">
+        <div class="card-content">
+          <div class="post-preview">
+            <a href="{{ url_for('post', path=post.file|safe, lang=lang) }}">
+              <h2 class="title is-3">{{ post.title[0]|safe }}</h2>
+              <h3 class="subtitle is-5">{{ post.subtitle[0]|safe }}</h3>
+              <h5 class="title is-6 has-text-grey">Postado por {{ post.authors[0]|safe }} em {{ post.date[0]|safe }}</h5>
+            </a>
+            <a class="button mt-2" href="{{ url_for('post', path=post.file|safe, lang=lang) }}">Ler Post</a>
+          </div>
+        </div>
+      </div>
+    {% endfor %}
+  </div>
+</section>
+
+{% endblock %}

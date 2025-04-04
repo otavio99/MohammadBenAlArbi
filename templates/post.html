@@ -1,0 +1,50 @@
+{% extends "base.html" %}
+
+{% block content %}
+<section class="section">
+  <div class="container">
+    <div class="columns is-centered">
+      <div class="column is-8">
+        <!-- Link de retorno ao Blog -->
+        <a class="button is-text" href="{{ url_for('blog', lang=lang) }}">← Voltar ao Blog</a>
+
+        <!-- Card com visual minimalista -->
+        <article class="card" style="border: none; box-shadow: none;">
+          <!-- Cabeçalho com título -->
+          <header class="" style="border-bottom: 1px solid #ddd;">
+            <p class="is-size-1 is-family-serif" style="font-weight: bold;">
+              {{ metainfos.title[0]|safe }}
+            </p>
+          </header>
+
+          <!-- Conteúdo do post -->
+          <div class="">
+            <div class="content">
+              <!-- Subtítulo em itálico -->
+              <p class="subtitle is-4 has-text-grey" style="font-style: italic;">
+                {{ metainfos.subtitle[0]|safe }}
+              </p>
+
+              <!-- Exibição das tags -->
+              {% if metainfos.tags %}
+                <div class="tags" style="margin-bottom: 1.5rem;">
+                  {% for tag in metainfos.tags %}
+                    <a href="{{ url_for('blog', lang=lang) }}?tag={{ tag }}" class="tag is-light">
+                      #{{ tag }}
+                    </a>
+                  {% endfor %}
+                </div>
+              {% endif %}
+
+              <!-- Conteúdo principal do post -->
+              <div class="post-content" style="line-height: 1.8; font-size: 1.125rem;">
+                {{ content|safe }}
+              </div>
+            </div>
+          </div>
+        </article>
+      </div>
+    </div>
+  </div>
+</section>
+{% endblock %}

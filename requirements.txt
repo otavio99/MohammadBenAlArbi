@@ -1,0 +1,9 @@
+Flask==2.2.5
+Markdown
+python-dateutil==2.8.1
+python-dotenv==0.15.0
+requests==2.25.1
+virtualenv==20.2.2
+Flask-Login
+flask-mongoengine
+Flask-WTF
