@@ -36,8 +36,6 @@
           </figure>
         </div>
       </div>
-
-
       <div class="columns">
         <div class="column">
           <figure class="image is-276x276">
@@ -50,22 +48,15 @@
           </p> 
         </div>
       </div>
-      
-
-  
-
       <p>
       Agora, a única opção que temos é interná-lo em um hospital particular, mas os custos são altíssimos. Toda minha família se uniu para juntar dinheiro para esta causa. Mas ainda assim é insuficiente. Uma diária no hospital custa 400 euros (aproximadamente 6.200 reais), sem contar exames, medicamentos e a cirurgia que ele precisará. Infelizmente, nossos recursos não são suficientes.
       </p> 
-
       <p>
       Por isso, pedimos sua ajuda para dar ao meu avô a chance de receber o tratamento adequado. Cada doação, por menor que seja, pode fazer a diferença entre sofrimento e alívio, entre desespero e esperança.
       </p>  
-      
       <p>
       Se você não puder doar, por favor, compartilhe esta campanha para que mais pessoas possam ajudar.
       </p>  
-
       <p>
       Que Deus recompense cada um de vocês por sua generosidade!
       </p>  
@@ -91,26 +82,4 @@
     </div>
   </div>
 </section>
-
-<!-- Seção de Últimas Postagens (Opcional) -->
-<section class="section" style="display: none;">
-  <div class="container">
-    <h1 class="title is-1">Atualizações</h1>
-    {% for post in metainfos %}
-      <div class="card">
-        <div class="card-content">
-          <div class="post-preview">
-            <a href="{{ url_for('post', path=post.file|safe, lang=lang) }}">
-              <h2 class="title is-3">{{ post.title[0]|safe }}</h2>
-              <h3 class="subtitle is-5">{{ post.subtitle[0]|safe }}</h3>
-              <h5 class="title is-6 has-text-grey">Postado por {{ post.authors[0]|safe }} em {{ post.date[0]|safe }}</h5>
-            </a>
-            <a class="button mt-2" href="{{ url_for('post', path=post.file|safe, lang=lang) }}">Ler Post</a>
-          </div>
-        </div>
-      </div>
-    {% endfor %}
-  </div>
-</section>
-
 {% endblock %}
